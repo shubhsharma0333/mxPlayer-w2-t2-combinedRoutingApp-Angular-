@@ -1,0 +1,14 @@
+<h3>Credit Card Status</h3>
+
+<div id="credit">
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Your Salary</span>
+        </div>
+        <input type="text" [(ngModel)] = "salary" placeholder="Enter Salary" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div id="btn">
+        <button type="button" class="btn btn-outline-warning" (click)="check()">Get Status</button> 
+    </div>
+    <h5>{{status}}</h5>
+</div>

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lazy-routing';
+
+  user:any = {}
+
+  //pristine, untouched, touched, dirty, valid, invalid
+
 }

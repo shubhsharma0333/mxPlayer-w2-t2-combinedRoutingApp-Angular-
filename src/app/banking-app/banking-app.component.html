@@ -1,0 +1,34 @@
+<h3>The Banking App</h3>
+
+<div id="bank">
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Initial Amount</span>
+        </div>
+        <input type="text" [(ngModel)] = "initialAmount" placeholder="Enter Initial Amount" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Deposite Amount</span>
+        </div>
+        <input type="text" [(ngModel)] = "da" placeholder="Enter Deposite Amount " class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">withdraw Amount</span>
+        </div>
+        <input type="text" [(ngModel)] = "wa" placeholder="Enter withdraw Amount" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div id="btn">
+        <button type="button" class="btn btn-outline-warning" (click)="openAccount()">Open Account</button> 
+        <button type="button" class="btn btn-outline-success" (click)="deposite()">Deposite</button>
+        <button type="button" class="btn btn-outline-danger" (click)="withdraw()">Withdraw</button> 
+        
+    </div>
+    
+    <h5>{{status}}</h5>
+    
+    
+</div>

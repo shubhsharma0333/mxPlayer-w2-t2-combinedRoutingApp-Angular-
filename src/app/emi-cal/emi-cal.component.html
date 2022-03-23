@@ -1,0 +1,29 @@
+<h3>Calculate EMI</h3>
+
+<div id="emi">
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Principle Amount</span>
+        </div>
+        <input type="text" [(ngModel)] = "principleAmt" placeholder="Enter Principle amount" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Intrest Rate</span>
+        </div>
+        <input type="text" [(ngModel)] = "interestRate" placeholder="Enter Interest rate" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Tenure (in years)</span>
+        </div>
+        <input type="text" [(ngModel)] = "tenure" placeholder="Enter tenure in years" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    
+    <div id="btn">
+        <button type="button" class="btn btn-outline-warning" (click)="emi()">Calculate</button>
+        <p>Total amount to be paid: {{totalAmt}}</p>
+    </div>
+</div>

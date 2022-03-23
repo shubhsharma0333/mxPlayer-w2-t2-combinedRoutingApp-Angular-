@@ -1,0 +1,22 @@
+h3{
+    text-align: center;
+    color: grey;
+}
+
+#btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#credit{
+    margin: 30px 90px;
+}
+
+h5{
+    text-align: center;
+    font-weight: 300;
+    color: darkslategrey;
+    margin-top:30px;
+}
